@@ -67,6 +67,7 @@ This project is open-source and available under the MIT License.
 
 
 Author
+
 Mohd Parvez Khan
 Feel free to connect with me for feedback or suggestions!
 
