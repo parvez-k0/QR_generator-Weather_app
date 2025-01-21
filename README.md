@@ -37,11 +37,11 @@ The application is built using **Django** and **Django REST Framework (DRF)** fo
    cd QR_generator-Weather_app
    
 ## Create and Activate a Virtual Environment
-python -m venv venv
+ python -m venv venv
    
-   source venv/bin/activate  # On Linux/macOS
+ source venv/bin/activate  #On Linux/macOS
    
-   venv\Scripts\activate     # On Windows
+ venv\Scripts\activate     #On Windows
 ## Install dependencies
    pip install -r requirements.txt
 ## Run Database Migrations
