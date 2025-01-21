@@ -93,7 +93,7 @@ def Register(request):
 
 
 
-#'5367608ab1bd1d50bc2daa5560cc1fd2'
+
 
 def home(request):
     city = request.GET.get('city','lucknow').lower()
