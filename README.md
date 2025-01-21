@@ -43,14 +43,20 @@ The application is built using **Django** and **Django REST Framework (DRF)** fo
  source venv/bin/activate  #On Linux/macOS
    
  venv\Scripts\activate     #On Windows
+
 ## Install dependencies
-   pip install -r requirements.txt
+```
+pip install -r requirements.txt
+
 ## Run Database Migrations
-   python manage.py makemigrations
-   
-   python manage.py migrate
+```
+python manage.py makemigrations
+python manage.py migrate
+
 ## Run the Deployment Server
-   python manage.py runserver
+```
+python manage.py runserver
+
 ## Future Enhancements
 
 Add user authentication for saving QR code and weather searches.
