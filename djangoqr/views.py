@@ -9,7 +9,7 @@ import requests
 import datetime
 from rest_framework.response import Response
 from rest_framework.views import APIView
-
+from django.conf import settings
 
 
 #Home page render
@@ -93,14 +93,14 @@ def Register(request):
 
 
 
-
+#'5367608ab1bd1d50bc2daa5560cc1fd2'
 
 def home(request):
     city = request.GET.get('city','lucknow').lower()
-    api_key ='5367608ab1bd1d50bc2daa5560cc1fd2'
+    api_key =settings.WEATHER_API_KEY
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
     
-    API_KEY = 'AIzaSyDhj9_GVAyD99uzOWpBu6NsjOFEi-50ziQ'
+    API_KEY = settings.GOOGLE_API_KEY
     SEARCH_ENGINE_ID = '2125e1a990eab428c'
     
     query = city + "1920x1080"

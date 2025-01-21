@@ -124,6 +124,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+WEATHER_API_KEY = os.getenv('WEATHER_API_KEY')
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL ='/media/'
