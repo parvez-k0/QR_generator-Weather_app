@@ -1,0 +1,12 @@
+{% extends "navbar.html" %} {% block content %}
+<div style="color: black; border:1px solid #ffff;height: 250px; width:500px; margin:auto; border-radius:20px;" class="text-center mt-5">
+  <h2 class="mb-3">Login Form</h2>
+
+  <form method="POST">
+    {% csrf_token %} {{form.as_p}}
+    <button class="btn btn-primary">Login</button>
+  </form>
+
+  <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+</div>
+{% endblock %}

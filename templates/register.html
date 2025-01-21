@@ -1,0 +1,40 @@
+{% extends 'navbar.html' %}
+
+
+{% block content %}
+
+<div style="border:1px solid #ffff; height:600px; width:500px; border-radius:20px; margin:auto" class="mt-5">
+<h2 style="color: black" class="text-center mt-5">Registration Form</h2>
+
+
+<div class="text-center mt-5" style="color: black;">
+
+  <form method="POST">
+        {% csrf_token %} {{form.non_field_errors}}
+
+        <div class="mb-3">
+            <label for="id_username">Username:</label>
+           <div>{{ form.username }}</div> 
+        </div>
+
+        <div class="mb-3">
+            <label for="id_email">Email Address</label>
+            <div>{{ form.email }}</div>
+        </div>
+        <div class="mb-3">
+            <label for="id_password1"> Password </label>
+            <div>{{ form.password1 }}</div>
+        </div>
+        <div class="mb-3">
+            <label for="id_password2"> Confirm Password</label>
+           <div> {{form.password2}}</div>
+        </div>
+            <button class="btn btn-primary mt-3">Register</button>
+  </form>
+
+            <p style="color: aliceblue;">Already have an account <a href="{% url 'login' %}">Login here</a></p>
+
+            
+</div>
+</div>
+{% endblock %}

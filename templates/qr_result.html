@@ -1,0 +1,23 @@
+{% extends 'navbar.html' %} 
+
+{% block content %}
+
+<div class="container mt-5 align_items-center text-center">
+  <h2 class="mb-4" style="color: black;">{{ res_name }} QR Code</h2>
+  <img src="{{ qr_url }}" alt="QR Code" style="border: 1px solid #ffffff; box-shadow: 10px 10px 15px rgba(255, 255, 255, 0.2);" />
+  <div class="mt-4">
+    <a href="{{ qr_url }}" download="{{ file_name }}" class="btn btn-success">Download QR Code</a>
+
+   
+    {% if qr_file %}  
+    <div class="mt-3">
+        <a href="{{ qr_file }}" target="_blank" class="btn btn-primary"> Download Your {{file_name}}</a>
+    </div>
+    {% endif %}
+    
+    <br>
+    <small style="color:white; font-size: 45px">Thank you for using this QR Code Generator</small>
+  </div>
+</div>
+
+{% endblock %}
