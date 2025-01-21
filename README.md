@@ -36,31 +36,24 @@ The application is built using **Django** and **Django REST Framework (DRF)** fo
    git clone https://github.com/parvez-k0/QR_generator-Weather_app.git
    cd QR_generator-Weather_app
    
-# Create and Activate a Virtual Environment
-
+## Create and Activate a Virtual Environment
    python -m venv venv
    source venv/bin/activate  # On Linux/macOS
    venv\Scripts\activate     # On Windows
-
-# Install dependencies
+## Install dependencies
    pip install -r requirements.txt
-
-# Run Database Migrations
-
+## Run Database Migrations
    python manage.py makemigrations
    python manage.py migrate
-
-# Run the Deployment Server
-
+## Run the Deployment Server
    python manage.py runserver
-
-# Future Enhancements
+## Future Enhancements
 
 Add user authentication for saving QR code and weather searches.
 Enable caching to improve API response time.
 Add more detailed weather forecasts (e.g., 7-day forecast).
 
-# License
+## License
 
 This project is open-source and available under the MIT License.
 
